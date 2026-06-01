@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Movie List</h1>
+<div id="movies"></div>
+
+<script>
+const movies = [
+    ["Avatar", "Enter the world", 7.8],
+    ["Titanic", "A love story", 7.9]
+];
+
+let out = "";
+
+for (const m of movies) {
+    out += `
+        <h3>${m[0]}</h3>
+        <p>${m[1]}</p>
+        <p>Rating: ${m[2]}/10</p>
+        <hr>
+    `;
+}
+
+document.getElementById("movies").innerHTML = out;
+</script>
+
+</body>
+</html>
